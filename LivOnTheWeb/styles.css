@@ -1,0 +1,403 @@
+/* To use an external style sheet, add a link to it in the <head> section of each HTML page:
+<link rel="stylesheet" href="styles.css">
+This is the external */
+
+/* General Reset*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    text-align: center;
+    background: rgb(35, 34, 34) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+/* TEXT STYLING */
+
+h1 {
+    color: rgb(227, 45, 247);
+    text-align: center;
+    font-family: "Rubik Glitch", system-ui;
+    font-size: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-weight: 300;
+    font-style: normal;
+    display: inline-block;
+    /* transform: matrix(0, 0, 0, 0, 0, -100); */
+}
+
+h2 {
+    color: rgb(227, 45, 247);
+    text-align: center;
+    font-family: "Press Start 2P", serif;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 1.2;
+}
+
+h3 {
+    color: rgb(99, 187, 255);
+    font-family: "Beau Rivage", cursive;
+    line-height: 1.2;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+h4 {
+    color: rgb(255, 255, 15);
+    font-family: sans-serif;
+    line-height: 1.2;
+    font-size: 15pt;
+    text-decoration: underline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-family: "sans-serif", serif;
+    font-size: 20px;
+    font-weight: inherit;
+    /* background: linear-gradient(to bottom, white, purple); */
+    background-repeat: no repeat;
+    background-attachment: fixed;
+}
+
+div {
+    color: lightgrey;
+    text-align: center;
+    font-family: "sans-serif", serif;
+    font-size: 20px;
+    font-weight: inherit;
+    /* background: linear-gradient(to bottom, white, purple); */
+    background-repeat: no repeat;
+    background-attachment: fixed;
+}
+
+button {
+  border-radius: 60%;
+  padding: 5px;
+}
+
+hr.solid {
+  border-top: 2px solid #bbb;
+}
+
+/* HEADER */
+
+/* PAGE HOME */
+/* WEBSITE DEVELOPMENT AND DIGITAL DESIGN */
+.grid_skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+    padding: 20px;   
+}
+
+.grid_DD {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+    padding: 20px;   
+}
+
+/* SKILL SECTION */
+.grid_portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+    padding: 20px;   
+}
+
+.skillheading {
+    color: rgb(227, 45, 247);
+    font-family: sans-serif;
+    line-height: 1.2;
+    font-size: 20px;
+    border: 10px;
+    padding: 10px;
+    margin: 10px;
+    height: 5px;
+    width: 5px;
+}
+
+
+/* PAGE ABOUT */
+.grid_modules {
+    display: grid;
+    vertical-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+    padding: 20px;   
+}
+
+.grid_education {
+    display: grid;
+    vertical-align: center;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+    padding: 20px;   
+}
+
+.grid_programming {
+    display: grid;
+    vertical-align: center;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+    padding: 20px;    
+}
+
+/* .programming_photo {
+
+} */
+
+
+/* PAGE PORTFOLIO */
+.grid_digitaldesign {
+    display: grid;
+    vertical-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+}
+
+.brief h1 {
+  font-size: 50px;
+}
+
+
+
+
+
+
+
+
+/* .grid_programming p {
+    color: white;
+    text-align: left;
+    font-family: "sans-serif", serif;
+    font-size: 20px;
+    font-weight: inherit;
+    background-repeat: no repeat;
+    background-attachment: fixed;
+} */
+
+/* EXPERIMENT */
+
+/* .grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container > div {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.item1 {
+  grid-area: header;
+  background-color: purple;
+  text-align: center;
+  color: #ffffff;
+}
+
+.item1 > h1 {
+  font-size: 40px;
+}
+
+.item2 {
+  grid-area: menu;
+  }
+  
+.item2 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item2 li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+}
+
+.item2 li:hover {
+  background-color: #0099cc;
+}
+  
+.item3 {
+  grid-area: main;
+}
+
+.item3 > h1 {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.item3 > p {
+  margin-bottom: 7px;
+}
+
+.item4 {
+  grid-area: right;
+  border: 2px solid #0099cc;
+  background-color: white;
+  padding: 15px;
+  color: #000000;
+}
+
+.item4 > h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.item4 li {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.item5 {
+  grid-area: footer;
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+} */
+
+/* Body
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #292525;
+}
+
+/* Header 
+header {
+    background-color: #333;
+    color: white;
+    padding: 1.5rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.navigation ul,
+.social-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.navigation a,
+.social-bar a,
+.email-icon {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navigation a:hover,
+.social-bar a:hover,
+.email-icon:hover {
+    text-decoration: underline;
+}
+
+.email-icon {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Main 
+h1 {
+    color: rgb(227, 45, 247);
+    font-size: 80px;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 10px;
+    padding: 30px;
+    margin: 50px;
+}
+
+.secondaryheading {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 10px;
+    padding: 30px;
+    margin: 50px;
+}
+
+/* section 1 of H2 
+
+h2 {
+    color: rgb(227, 45, 247);
+    font-family: sans-serif;
+    line-height: 1.2;
+    font-size: 10pt;
+    border: 10px;
+    padding: 10px;
+    margin: 10px;
+    height: 20px;
+    width: 50px;
+}
+
+.WebsiteDevelopment {
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 10pt;
+    line-height: 1.2;
+    border: 2px solid powderblue;
+}
+
+.DigitalDesign {
+
+}
+
+/* Section 2 of H3 
+
+h3 {
+    color: rgb(227, 45, 247);
+    font-family: sans-serif;
+    line-height: 1.2;
+    font-size: 10pt;
+    border: 10px;
+    padding: 10px;
+    margin: 10px;
+    height: 5px;
+    width: 5px;
+}
+    */
