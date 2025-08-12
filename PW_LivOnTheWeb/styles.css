@@ -1,0 +1,368 @@
+/* To use an external style sheet, add a link to it in the <head> section of each HTML page:
+<link rel="stylesheet" href="styles.css">
+This is the external */
+
+/* General Reset*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    text-align: center;
+    background: rgb(35, 34, 34);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    /* margin-left: 100px;
+    margin-right: 100px; */
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* TEXT STYLING */
+
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    font-size: 6rem;
+}
+
+h1 {
+    color: rgb(227, 45, 247);
+    font-family: "Rubik Glitch", system-ui;
+    font-size: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+h2 {
+    color: rgb(227, 45, 247);
+    text-align: center;
+    font-family: "Press Start 2P", serif;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 1.2;
+}
+
+h3 {
+    color: rgb(99, 187, 255);
+    font-family: "Beau Rivage", cursive;
+    line-height: 1.2;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+h4 {
+    color: rgb(255, 255, 15);
+    font-family: sans-serif;
+    line-height: 1.2;
+    font-size: 15pt;
+    text-decoration: underline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-family: "sans-serif", serif;
+    font-size: 20px;
+    font-weight: inherit;
+    /* background: linear-gradient(to bottom, white, purple); */
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+div {
+    color: lightgrey;
+    text-align: center;
+    font-family: "sans-serif", serif;
+    font-size: 20px;
+    font-weight: inherit;
+    /* background: linear-gradient(to bottom, white, purple); */
+    background-repeat: no repeat;
+    background-attachment: fixed;
+}
+
+button {
+  border-radius: 60%;
+  padding: 5px;
+}
+
+/* DIVIDERS */
+
+hr.solid {
+    background-color: rgb(227, 45, 247);
+    padding: 1px;
+    margin: 5px auto;
+    width: 1200px;
+}
+
+.wrapper
+{
+	padding-bottom: 90px;
+    /* background-color: blue; */
+}
+
+.divider
+{
+	position: relative;
+	margin-top: 90px;
+	height: 1px;
+    /* background-color: rgb(255, 0, 255); */
+
+}
+
+.div-transparent:before
+{
+	content: "";
+    background-color: rgb(227, 45, 247);
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 2px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
+.div-arrow-down:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -7px;
+	left: calc(50% - 7px);
+	width: 14px;
+	height: 14px;
+	transform: rotate(45deg);
+    background-color: rgb(35, 34, 34);
+    border-color: rgb(227, 45, 247);
+	border-bottom: 2px solid  rgb(227, 45, 247);
+	border-right: 2px solid  rgb(227, 45, 247);
+}
+
+/* LISTS / BULLETPOINTS */
+ol {
+    list-style-type: square;
+    text-align: left;
+    list-style-position: inside;
+    padding: 0;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* HEADER */
+
+/* PAGE HOME */
+/* SECTION WEBSITE DEVELOPMENT AND DIGITAL DESIGN */
+.grid_DD {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+    padding: 20px;   
+}
+
+/* SECTION ABOUT ME */
+.grid_skills {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+    padding: 0px; 
+    vertical-align: middle;  
+    height: 300px;
+}
+
+.grid_skills p {
+    color: rgb(193, 193, 193);
+    margin-top: 30px;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_grad {
+    border: 1px solid, #ddd;
+    border-radius: 40px;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+}
+
+#learn_more {
+    color: rgb(244, 255, 41);
+    background-color: transparent;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+#learn_more:hover {
+    color: rgb(77, 74, 255);
+    background-color: transparent;
+    margin-bottom: 30px; 
+    transition: 0.4s;
+}
+
+/* SECTION PORTFOLIO */
+.grid_portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 0rem;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.skillheading {
+    color: rgb(227, 45, 247);
+    font-family: sans-serif;
+    line-height: 1.6;
+    font-size: 20px;
+    border: px;
+    margin-left: 72px;
+    margin-top: 16px;
+    height: 5px;
+    width: 5px;
+}
+
+.grid_portfolio ol{
+    margin-left: 32px
+}
+
+#mp_portfolio_button {
+    color: rgb(244, 255, 41);
+    background-color: rgb(71, 71, 71);
+    font-size: 20px;
+    float: right;
+    margin-right: 64px;
+    margin-top: 32px
+}
+
+#mp_portfolio_button:hover {
+    color: rgb(255, 0, 0);
+    background-color: transparent;
+    transition: 0.7s;
+}
+
+/* SECTION CTA */
+.mp_cta p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.mp_cta button {
+    color: rgb(244, 255, 41);
+    background-color: rgb(66, 66, 66);
+    border-color: rgb(39, 39, 39);
+    border-width: 5px;
+  
+    border-radius: 10%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+
+
+/* PAGE ABOUT */
+/* SECTION EDUCATION */
+.grid_modules {
+    display: grid;
+    vertical-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+    padding: 20px;   
+}
+
+.grid_education {
+    display: grid;
+    vertical-align: center;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+    padding: 20px;   
+}
+
+.grid_programming {
+    display: grid;
+    vertical-align: center;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+    padding: 20px;    
+}
+
+
+/* PAGE PORTFOLIO */
+.img_42_1 {
+    border-top-right-radius: 500px;
+    border-top-left-radius: 500px;
+}
+
+.grid_digitaldesign {
+    display: grid;
+    vertical-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+}
+
+/* PAGE CONTACT */
+/* Text effect 9 */
+
+.text-effect9 .text-wrapper1,
+.text-effect9 .text-wrapper2 {
+  overflow: hidden;
+}
+
+.text-effect9 .text-wrapper1 span {
+  transform: translate(-100%, 50%) skew(60deg);
+  animation: slideTopHalf 1s forwards cubic-bezier(0.85, 0, 0.15, 1);
+}
+
+@keyframes slideTopHalf {
+  to {
+    transform: translate(0%, 50%) skew(0deg);
+  }
+}
+
+.text-effect9 .text-wrapper2 span {
+  transform: translate(100%, -50%) skew(-60deg);
+  animation: slideBottomHalf 1s forwards cubic-bezier(0.85, 0, 0.15, 1);
+}
+
+@keyframes slideBottomHalf {
+  to {
+    transform: translate(0%, -50%) skew(0deg);
+  }
+}
