@@ -1,0 +1,14 @@
+body {
+    background-color: purple;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: left
+}
