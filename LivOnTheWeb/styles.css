@@ -1,10 +1,3 @@
-/* To use an external style sheet, add a link to it in the <head> section of each HTML page:
-<link rel="stylesheet" href="styles.css">
-This is the external */
-
-/* General Reset*/
-
-
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +19,6 @@ body {
 }
 
 /* TEXT STYLING */
-
 #title {
     display: flex;
     justify-content: center;
@@ -103,9 +95,47 @@ div {
     background-attachment: fixed;
 }
 
+/* BUTTONS */
 button {
   border-radius: 60%;
   padding: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    color: rgb(244, 255, 41);
+    background-color: rgb(71, 71, 71);
+}
+
+.btn span {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(90, 90, 90);    
+    width: 0px;
+    height: 0px;
+    left: var(--xPos);
+    top: var(--yPos);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width .5s, height .5s;
+    overflow: hidden;
+}
+
+.btn:hover::before {
+    width: 300px;
+    height: 300px
 }
 
 /* DIVIDERS */
@@ -290,9 +320,6 @@ ul {
     font-size: 20px;
 }
 
-
-
-
 /* PAGE ABOUT */
 /* SECTION EDUCATION */
 .grid_modules {
@@ -322,7 +349,6 @@ ul {
     padding: 20px;    
 }
 
-
 /* PAGE PORTFOLIO */
 .img_42_1 {
     border-top-right-radius: 500px;
@@ -339,7 +365,6 @@ ul {
 
 /* PAGE CONTACT */
 /* Text effect 9 */
-
 .text-effect9 .text-wrapper1,
 .text-effect9 .text-wrapper2 {
   overflow: hidden;
