@@ -1,7 +1,7 @@
 // CONTACT BUTTON 
-const btnEl = document.querySelector(".btn");
+const btnEls = document.querySelector(".btn");
 
-btnEl.addEventListener("mouseover", (event) => {
+btnEls.addEventListener("mouseover", (event) => {
     const x = (event.pageX - btnEl.offsetLeft);
     const y = (event.pageY - btnEl.offsetTop);
 
@@ -9,6 +9,37 @@ btnEl.addEventListener("mouseover", (event) => {
     btnEl.style.setProperty("--yPos", y + "px");
 })
 
+// PAGE PORTFOLIO
+// BRIEF IMAGES
+
+const images_DCGEl = document.querySelector(".images_DCG");
+
+const prevEl = document.getElementById("prev");
+const nextEl = document.getElementById("next");
+let x = 0;
+let timer;
+
+prevEl.addEventListener("click", () => {
+    x = x + 45;
+    clearTimeout(timer);
+    updateGallery();
+});
+
+nextEl.addEventListener("click", () => {
+    x = x - 45;
+    clearTimeout(timer);
+    updateGallery();
+});
+
+function updateGallery() {
+    images_DCGEl.style.transform = `perspective(1000px) rotateY(${x}deg)`;
+    timer = setTimeout(() => {
+        x = x - 45;
+        updateGallery();
+    }, 3000);
+}
+
+updateGallery();
 
 
 

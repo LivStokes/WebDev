@@ -303,6 +303,76 @@ ul {
     transition: 0.7s;
 }
 
+#DCGsection {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 400px
+}
+
+.images_DCG {
+    text-align: center; 
+    align-items: center; 
+    justify-content: center; 
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(0deg);
+
+}
+
+.images_DCG span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+}
+
+.images_DCG span img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.DCGbtn-container {
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.DCGbtn {
+    position: absolute;
+    bottom: -30px;
+    background-color: slateblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.DCGbtn:hover {
+    filter: brightness(1.5);
+}
+
+#prev {
+    background-color: rgb(54, 54, 54);
+    left: 20%;
+}
+
+#next {
+    background-color: rgb(54, 54, 54);
+    right: 20%;
+}
+
 /* SECTION CTA */
 .mp_cta p {
     margin-top: 16px;
@@ -363,6 +433,9 @@ ul {
     gap: 2rem;
 }
 
+/* BRIEF IMAGES */
+
+
 /* PAGE CONTACT */
 /* Text effect 9 */
 .text-effect9 .text-wrapper1,
@@ -391,3 +464,4 @@ ul {
     transform: translate(0%, -50%) skew(0deg);
   }
 }
+
